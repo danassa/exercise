@@ -2,14 +2,13 @@
 version := "0.1"
 
 ThisBuild / scalaVersion := "2.12.0"
+val sparkVersion = "3.0.0"
 
 lazy val intuit = (project in file("."))
   .settings(
     name := "intuit",
     dependencies
   )
-
-val sparkVersion = "3.0.0"
 
 lazy val dependencies = libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5",
